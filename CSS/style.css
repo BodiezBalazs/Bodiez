@@ -148,6 +148,7 @@ img { /* more responsive images*/
 	justify-content: center;
 	background-color:#64c2a348; /*az eredeti türkiz szín alacsonyabb opacitiy-vel*/
 	border-radius: 70px;
+	box-shadow: 5px 10px;
 }
 .card img {
 	height: 375px; /*lehet hogy változtatni kell majd itt a kép méreten*/
