@@ -208,7 +208,6 @@ img { /* more responsive images*/
 }
 
 .rólamimg img{
-	overflow-x: hidden;
 	max-width: 20%;
 	margin-left: 20%;
 	margin-right: 2%;
