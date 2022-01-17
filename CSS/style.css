@@ -707,11 +707,16 @@ img { /* more responsive images*/
 	}
 	.blogrecomobile img{
 		margin-top: 5%;
+		border:#64c2a348 solid 2px;
 		border-radius: 15px;
 	}
 
 	.blogtext{
 		margin:0 5% 0 5%;
+		fontsize: 18px;
+	}
+	#introtext{
+		fontsize: 20px;
 	}
 }
 
