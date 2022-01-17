@@ -30,6 +30,11 @@ img { /* more responsive images*/
 	display: block;
 	}
 
+@keyframes heroimg_anim{
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
 /* 2.Navbar ******************************************************************************************/
 .header {
 	color: #fff;
@@ -41,6 +46,8 @@ img { /* more responsive images*/
 
 .navbar {
 	background-color:rgb(255, 255, 255)!important;
+	animation: heroimg_anim 300ms ease-in;
+	animation-fill-mode: both;
 	}
 
 .navbar a{
@@ -92,6 +99,7 @@ img { /* more responsive images*/
 
 /* 3.Hero main-page *************************************************************************************************************/
 
+
 .container {
 	color: black;
 }
@@ -100,13 +108,22 @@ img { /* more responsive images*/
 	border-radius: 5px;
 	box-shadow: 10px 10px 7px 5px rgba(0,0,0, 0.5);
 	max-width: 100%;
+
+	animation: heroimg_anim 450ms ease-in;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
 }
+
 .col-4 {
 	padding-top: 220px;
+	animation: heroimg_anim 400ms ease-in;
+	animation-delay: 0.15s;
+	animation-fill-mode: both;
 }
 .col-4 h1 {
 	line-height: 1;
 }
+
 .iratkozzfelbtn{
 	background-color: #64C2A2;
 	font-size: 20px;
@@ -124,11 +141,26 @@ img { /* more responsive images*/
 	margin: 5% 0 0 0;
 }
 
+#herobutton{
+	background-color: #64C2A2;
+	font-size: 24px;
+	color: #fff;
+	padding: 10px;
+	border: #4e4e4e 2px solid;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.herop{
+	margin-bottom: 10%;
+}
+
 .heromobile{ /*mobile nézete a heropagenek*/
 	display: none;
 }
 .heromobile_img{
 	margin: 0 0% 5% 0%;
+	animation: heroimg_anim 400ms ease-in;
+	animation-fill-mode: both;
 }
 .heromobile_img img{
 	box-shadow: 0px 10px 7px 5px rgba(0,0,0, 0.5);
@@ -170,9 +202,9 @@ img { /* more responsive images*/
 	margin-top: 2%;
 }
 
-.card a {
+.card-body a {
 	text-decoration:none;
-	color: #64C2A2;
+	color: #64C2A2!important;
 }
 .card:hover{ /*így kell *-gal az egész div-et, containert hover effektelni*/
 	transform:scale(1.008);
@@ -263,17 +295,22 @@ img { /* more responsive images*/
 
 
 /* 7.BLOGPOST (egyes bejegyzések) **********************************************************************************************************************************/
-.blogheadline { /*az ide tartozó imgnek heightnak hárommal oszthatónak kell lennie 1240x402*/
+.blogheadline { /*az ide tartozó imgnek heightnak hárommal oszthatónak kell lennie 1240x402, Photoshop blackbox opacity 30%*/
 	display: flex;
 	margin-left: 10%;
+	margin-right: 10%;
+	animation: heroimg_anim 400ms ease-in;
+	animation-fill-mode: both;
 }
-#blogtitle {
+/*#blogtitle { /*itt lehet htmlben beírni a blogtitlet (nem photoshopban)
 	position: absolute;
 	top: 30%;
 	right: 50%;
 	color: #fff;
 	font-size: 54px;
-}
+	text-align: center;
+	margin-left: 3%;
+}*/
 .blogreco {
 	display: flex;
 	flex-direction: column;
@@ -282,22 +319,75 @@ img { /* more responsive images*/
 	height: 134px;
 }
 
+.blogrecomobile{
+	display: none;
+}
+.blogrecomobile_img_link{
+	margin: 2% 10% 5% 10%;
+}
+
+#blogrecomobileh5{
+	margin: 3% 2% 0 2%;
+}
+
+#reco1{
+	animation: heroimg_anim 300ms ease-in;
+	animation-delay: 400ms;
+	animation-fill-mode: both;
+}
+#reco2{
+	animation: heroimg_anim 300ms ease-in;
+	animation-delay: 700ms;
+	animation-fill-mode: both;
+}
+#reco3{
+	animation: heroimg_anim 300ms ease-in;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+
+#introtext{
+	font-size: 18px;
+}
+
 .blogtext {
 	margin-left: 22%;
 	margin-right: 25%;
 	margin-bottom: 2%;
+	animation: heroimg_anim 400ms ease-in;
+	animation-fill-mode: both;
 }
 
-.oszlop {
+.blogtext a{
+	color:#64C2A2;
+}
+
+.oszlop1 {
 	display: flex;
+	margin-bottom: 5%;
+}
+.oszlop1text{
+	margin-right: 2%;
+}
+
+#kiemelés{
+	background-color: rgb(83, 83, 83);
+	color: #FFF;
+	font-size: 20px;
+	padding: 1%;
 }
 
 .oszlop2 {
 	display: flex;
 	flex-direction: row-reverse;
+	margin-bottom: 5%;
 }
 
-.oszlop img{
+.oszlop2text{
+	margin-left:2%;
+}
+
+.oszlop1 img{
 	border-radius: 5%;
 }
 
@@ -330,6 +420,9 @@ img { /* more responsive images*/
 	padding: 3% 0 3% 2%;
 	border-radius: 20px;
 	box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.5);
+
+	animation: heroimg_anim 400ms ease-in;
+	animation-fill-mode: both;
 }
 .edzéspostok img{
 	width: 500px;
@@ -345,6 +438,7 @@ img { /* more responsive images*/
 }
 .edzéspostoklist img{
 	display: flex;
+	max-width: 300px;
 }
 .edzéspostoklist a{
 	margin: 2% 2% 0 0;
@@ -360,6 +454,10 @@ img { /* more responsive images*/
 	padding: 3% 2% 3% 0;
 	border-radius: 20px;
 	box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.5);
+
+	animation: heroimg_anim 400ms ease-in;
+	animation-delay: 0.15s;
+	animation-fill-mode: both;
 }
 .táplálkozáspostok img{
 	width: 500px;
@@ -390,6 +488,10 @@ img { /* more responsive images*/
 	padding: 3% 0 3% 2%;
 	border-radius: 20px;
 	box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.5);
+
+	animation: heroimg_anim 400ms ease-in;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
 }
 .regenerációpostok img{
 	width: 500px;
@@ -572,6 +674,69 @@ img { /* more responsive images*/
 	}
 }
 
+/* "Blogpost".html Responsiveness*********************************************************************************************************************/
+@media only screen and (max-width:1050px){
+	.oszlop1{
+		flex-direction: column;
+		align-items: center;
+	}
+	.oszlop2{
+		flex-direction: column;
+		align-items: center;
+	}
+	.blogtext img{
+		max-width: 60%;
+	}
+}
+@media only screen and (max-width:800px){
+	.blogtext img{
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 540px){
+	.blogheadline{
+		flex-direction: column;
+		margin: 0 1% 0 1%;
+	}
+	.blogreco{
+		display: none;
+	}
+	.blogrecomobile{
+		display: inline;
+		overflow-x: hidden
+	}
+	.blogrecomobile img{
+		margin-top: 5%;
+		border-radius: 15px;
+	}
+
+	.blogtext{
+		margin:0 5% 0 5%;
+	}
+}
+
+@media only screen and (max-width:1610px){
+
+	.blogtext{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+@media only screen and (max-width:1240px){
+	.blogtext{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+@media only screen and (max-width:1800px){
+	.blogheadline{
+		flex-direction: column;
+	}
+	.blogreco{
+		flex-direction: row;
+		justify-content: center;
+	}
+}
 /*Responsinves end*/
 
 /*Footer szekció **********************************************************************************************************************************/
