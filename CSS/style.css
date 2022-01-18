@@ -411,6 +411,9 @@ img { /* more responsive images*/
 	width: 100%;
 	height: 100%;
 }
+summary::marker{
+	color:transparent;
+}
 
 
 .edzéspostok{
@@ -443,7 +446,9 @@ img { /* more responsive images*/
 .edzéspostoklist a{
 	margin: 2% 2% 0 0;
 }
-
+.edzéspostok i{
+	color:#64C2A2;
+}
 
 
 .táplálkozáspostok{
@@ -477,7 +482,9 @@ img { /* more responsive images*/
 .táplálkozáspostoklist a{
 	margin: 2% 2% 0 0;
 }
-
+.táplálkozáspostok i{
+	color:#64C2A2;
+}
 
 
 .regenerációpostok{
@@ -510,6 +517,9 @@ img { /* more responsive images*/
 }
 .regenerációpostoklist a{
 	margin: 2% 2% 0 0;
+}
+.regenerációpostok i{
+	color:#64C2A2;
 }
 
 /* BEJEGYZÉSEK PAGE end*/
